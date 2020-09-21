@@ -21,8 +21,9 @@ function check(){
     }).then(function(response) {
         console.log(response);
         for(var i = 0; i < numArticles; i++){
-            console.log(`Article : ${i}`);
-            console.log(`Title : ${response.response.docs[i].abstract}`);
+            console.log(`Article : ${i+1}`);
+            console.log(`Title : ${response.response.docs[i].headline.main}`);
+            console.log(`Abstract : ${response.response.docs[i].abstract}`);
             console.log(`${response.response.docs[i].byline.original}`);
             console.log(`url : ${response.response.docs[i].web_url}`);
         }
