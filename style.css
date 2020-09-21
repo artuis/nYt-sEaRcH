@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+}
+
+.jumbotron{
+    font-family:'Roboto', sans-serif;
+    color: #f2f2f2;
+    align-items: center;
+    background-color: #2469a6;
+}
+
+.display-4{
+    padding-left: 20px;
+}
+
+form{
+    margin: auto;
+}
