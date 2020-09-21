@@ -4,9 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NYT Search</title>
+   
+    <!-- fontawesome link -->
+    <script src="https://kit.fontawesome.com/c7d28a1474.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- style sheet -->
     <link rel="stylesheet" href="style.css" />
+
   </head>
   <body>
+    <div class="jumbotron d-flex justify-content-center">
+        <i class="fal fa-newspaper fa-4x"></i>
+        <h1 class="display-4">NYT Search</i></h1>
+    </div>
+
+    <form class = "col-8 d-flex flex-column">
+        <div class="form-group">
+            <label for="search-term">Search Term</label>
+            <input type="text" class="form-control" id="search-term" placeholder="">  
+        </div>
+        <div class="form-group">
+            <label for="number-articles">Number of Articles</label>
+            <input type="text" class="form-control" id="number-articles" placeholder="">  
+        </div>
+        <div class="form-group">
+            <label for="start-year">Start Year (Optional)</label>
+            <input type="text" class="form-control" id="start-year" placeholder="">  
+        </div>
+        <div class="form-group">
+            <label for="start-year">End Year (Optional)</label>
+            <input type="text" class="form-control" id="start-year" placeholder="">  
+        </div>
+        <button type="submit" class="btn btn-primary" id="submit">Search</button>
+        <button type="clear" class="btn btn-primary" id="clear">Clear</button>
+    </form>
+    
+    
+      
+
+
+
+
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script
